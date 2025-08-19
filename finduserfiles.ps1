@@ -1,6 +1,6 @@
 #powershell -executionpolicy bypass -file 'findfilesutil.ps1' -Regex 'invoice'
 param (
-    $Regex,
+    $Regex = 'invoice',
     $Paths = 'Documents;Desktop;Downloads;Downloads\Telegram Desktop'
 )
 $results = @()
